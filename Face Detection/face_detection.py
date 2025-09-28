@@ -42,7 +42,7 @@ class FaceRecognitionApp:
             return
 
         try:
-            image = cv2.imread("C:\AI PROJECTS\sample_image.jpg")
+            image = cv2.imread("C:\PROJECTS\sample_image.jpg")
             rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
             faces = face_recognition.face_locations(rgb_image)
             encodings = face_recognition.face_encodings(rgb_image, faces)
